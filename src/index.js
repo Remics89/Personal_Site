@@ -6,7 +6,7 @@ const App = () => {
 
 
     return (
-        <div className="app">Personal Site</div>
+        <div className="main">Personal Site</div>
     )
 }
 
