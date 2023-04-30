@@ -1,20 +1,12 @@
-import React, { useState } from "react";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import EmailIcon from "@mui/icons-material/Email";
-import { BottomNavigation, BottomNavigationAction } from "@mui/material";
+import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
-    const [value, setValue] = useState(0);
 
     return (
-        <div className="ui three item menu">
-            <BottomNavigation
-                showLabels
-                value={value}
-                onChange={(event, newValue) => setValue(newValue)}>
-                <BottomNavigationAction label="Github" icon={<GitHubIcon />} />
-                <BottomNavigationAction label="Email" icon={<EmailIcon />} />
-            </BottomNavigation>
+        <div className="footer">
+            <Link className="footlink" to={"https://github.com/Remics89"} target="_blank" ><i className="github icon"/></Link>
+            <Link className="footlink" to={"mailto:Remics89@gmail.com"} target="_blank" ><i className="envelope icon"/></Link>
         </div>
     );
 };
