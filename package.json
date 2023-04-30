@@ -7,16 +7,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/FullstackAcademy/UNIV.Lab.ReactRouter.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/FullstackAcademy/UNIV.Lab.ReactRouter/issues"
-  },
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
