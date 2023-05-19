@@ -15,6 +15,14 @@
     align-items: center;
 }
 
+.display {
+    background-color: gray;
+    border-radius: 1em;
+    border: 2px black solid;
+    margin: 10em;
+    margin-top: 2em;
+}
+
 .title {
     font-size: xx-large;
     margin: 5px;
@@ -41,3 +49,5 @@
     bottom: 0;
     margin-top: 20px;
 }
+
+
