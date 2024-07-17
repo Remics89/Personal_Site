@@ -19,7 +19,7 @@ const Transition = (props) => {
 
     return (
         <div className="display">
-            <img className="ui float image" src={images[imgindex]} />
+            <img className="ui fluid image" src={images[imgindex]} />
         </div>
     );
 };

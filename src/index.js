@@ -6,6 +6,7 @@ import Transition from "./imageTransition";
 
 import fittrk from "./images/FITTRK.png";
 import retro from "./images/Retro.png";
+import AboutMe from "./about";
 
 const App = () => {
 
@@ -19,9 +20,12 @@ const App = () => {
             </div>
             <Transition imgindex={imgindex} setimgindex={setimgindex} />
             <div className="main">
-                <h3 className="ui header">Section One</h3>
+                <h2 className="ui header">About Me</h2>
                 <div className="ui section divider"></div>
-                <h3 className="ui header">Section Two</h3>
+                <div className="about"><AboutMe /></div>
+                <div className="ui section divider"></div>
+                <h2 className="ui header">Section Two</h2>
+                <div className="ui section divider"></div>
             </div>
             <Footer />
         </Fragment>
