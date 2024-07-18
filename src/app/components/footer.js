@@ -1,6 +1,3 @@
-import Mugshot from "/public/mugshot sketch.png";
-import Image from "next/image";
-
 const navigation = {
   social: [
     {
@@ -33,19 +30,17 @@ const navigation = {
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer aria-labelledby="footer-heading" className="bg-gray-900">
+    <footer aria-labelledby="footer-heading" className="bg-gray-900 text-center">
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
       <div className="mx-auto max-w-7xl px-4 pb-4 pt-4 sm:pt-16 lg:px-8 lg:pt-12">
-        <div className="xl:grid xl:grid-cols-3 xl:gap-8">
+        <div className="xl:grid xl:gap-8">
           <div className="space-y-8">
-            <Image height={200} width={200} alt="" src={Mugshot} />
             <p className="text-sm leading-6 text-gray-300">
-              Making the web a better place through constructing elegant
-              components.
+              Making the web a better place through constructing elegant UI.
             </p>
-            <div className="flex space-x-6">
+            <div className="flex space-x-6 justify-center">
               {navigation.social.map((item) => (
                 <a
                   key={item.name}
