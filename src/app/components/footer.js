@@ -30,7 +30,10 @@ const navigation = {
 export default function Footer() {
   const year = new Date().getFullYear();
   return (
-    <footer aria-labelledby="footer-heading" className="bg-gray-900 text-center">
+    <footer
+      aria-labelledby="footer-heading"
+      className="bg-gray-900 text-center"
+    >
       <h2 id="footer-heading" className="sr-only">
         Footer
       </h2>
@@ -38,7 +41,7 @@ export default function Footer() {
         <div className="xl:grid xl:gap-8">
           <div className="space-y-8">
             <p className="text-sm leading-6 text-gray-300">
-              Making the web a better place through constructing elegant UI.
+              Making the web a better place through constructing elegant UX/UI.
             </p>
             <div className="flex space-x-6 justify-center">
               {navigation.social.map((item) => (
@@ -49,13 +52,19 @@ export default function Footer() {
                   className="text-gray-500 hover:text-gray-400"
                 >
                   <span className="sr-only">{item.name}</span>
-                  <item.icon aria-hidden="true" className="h-6 w-6" />
+                  <item.icon
+                    aria-hidden="true"
+                    className="h-10 w-10 sm:h-6 sm:w-6"
+                  />
                 </a>
               ))}
             </div>
           </div>
         </div>
-        <div className="border-t border-white/10 pt-4 sm:mt-20 lg:mt-8">
+        <div className="border-t border-white/10 pt-4 mt-4 sm:mt-20 lg:mt-8">
+          <p className="text-xs leading-5 text-gray-400">
+            Site built with NextJS & TailwindCSS.
+          </p>
           <p className="text-xs leading-5 text-gray-400">
             &copy; {year} Matthew Szekeres, Inc. All rights reserved.
           </p>
